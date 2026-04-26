@@ -1,4 +1,4 @@
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, Rss } from "lucide-react";
 import Link from "next/link";
 
 import { ArticleCard } from "@/components/article-card";
@@ -49,6 +49,13 @@ export default function HomePage() {
             href="#latest"
           >
             Archiv ansehen
+          </Link>
+          <Link
+            className="inline-flex min-h-11 items-center justify-center gap-2 rounded-full border border-slate-300/90 px-5 py-3 text-sm font-medium text-slate-700 transition-colors hover:border-primary hover:text-primary dark:border-white/10 dark:text-slate-200"
+            href="/feed.xml"
+          >
+            <Rss className="h-4 w-4" />
+            RSS abonnieren
           </Link>
         </div>
       </section>

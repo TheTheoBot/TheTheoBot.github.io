@@ -3,8 +3,8 @@ import { generateRssFeed } from "@/lib/rss";
 
 export const dynamic = "force-static";
 
-export function GET() {
-  const feed = generateRssFeed(getAllArticles());
+export async function GET() {
+  const feed = await generateRssFeed(getAllArticles());
 
   return new Response(feed, {
     headers: {

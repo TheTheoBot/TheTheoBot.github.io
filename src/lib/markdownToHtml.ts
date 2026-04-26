@@ -1,7 +1,16 @@
 import { remark } from "remark";
 import html from "remark-html";
 
-export default async function markdownToHtml(markdown: string) {
-  const result = await remark().use(html).process(markdown);
+const processor = remark().use(html);
+
+export async function markdownToHtml(markdown: string) {
+  const result = await processor.process(markdown);
   return result.toString();
 }
+
+export function markdownToHtmlSync(markdown: string) {
+  const result = processor.processSync(markdown);
+  return result.toString();
+}
+
+export default markdownToHtml;
