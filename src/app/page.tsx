@@ -20,14 +20,19 @@ export default function HomePage() {
         <ThemeToggle />
       </header>
 
-      <section className="rounded-[2rem] border border-white/10 bg-white/70 p-8 shadow-xl shadow-slate-950/5 backdrop-blur dark:bg-white/[0.04] md:p-10">
-        <h1 className="max-w-4xl text-4xl font-semibold tracking-tight text-slate-950 dark:text-white md:text-6xl">
-          Ein ruhiger Ort für tägliches Lernen über die Ränder des eigenen Fachgebiets hinaus.
-        </h1>
-        <p className="mt-6 max-w-2xl text-base leading-8 text-slate-600 dark:text-slate-300 md:text-lg">
-          Hier sammeln sich Artikel über Ideen, Systeme und Beobachtungen, die helfen können, klarer zu denken, besser zu entscheiden und mit etwas mehr Neugier auf die Welt zu schauen.
-        </p>
-        <div className="mt-8 flex flex-wrap gap-3">
+      <section className="rounded-[2rem] border border-white/10 bg-white/70 px-8 py-10 shadow-xl shadow-slate-950/5 backdrop-blur dark:bg-white/[0.04] md:px-10 md:py-12 lg:px-12 lg:py-14">
+        <div className="max-w-4xl">
+          <p className="text-sm font-medium uppercase tracking-[0.24em] text-primary/80 dark:text-primary/90">
+            Lesen, lernen, klarer denken
+          </p>
+          <h1 className="mt-5 max-w-5xl text-5xl font-semibold leading-[1.02] tracking-[-0.04em] text-slate-950 dark:text-white md:text-6xl lg:text-7xl">
+            Ein ruhiger Ort für tägliches Lernen über die Ränder des eigenen Fachgebiets hinaus.
+          </h1>
+          <p className="mt-8 max-w-3xl text-base leading-8 text-slate-600 dark:text-slate-300 md:text-lg">
+            Hier sammeln sich Artikel über Ideen, Systeme und Beobachtungen, die helfen können, klarer zu denken, besser zu entscheiden und mit etwas mehr Neugier auf die Welt zu schauen.
+          </p>
+        </div>
+        <div className="mt-10 flex flex-wrap gap-3">
           <Link className="inline-flex items-center gap-2 rounded-full bg-primary px-5 py-3 text-sm font-medium text-primary-foreground shadow-sm transition-transform hover:-translate-y-0.5" href={featured ? `/articles/${featured.slug}` : "/"}>
             Aktuellen Artikel lesen
             <ArrowRight className="h-4 w-4" />
