@@ -12,13 +12,13 @@ export default function HomePage() {
 
   return (
     <main className="mx-auto flex min-h-screen max-w-6xl flex-col px-4 pb-16 pt-4 sm:px-6 sm:pt-6 lg:px-8">
-      <header className="mb-8 flex items-center justify-between gap-3 rounded-full border border-white/10 bg-white/70 px-3 py-3 shadow-sm backdrop-blur dark:bg-white/[0.04] sm:mb-10 sm:px-4">
+      <header className="mb-8 flex items-center justify-between gap-3 rounded-2xl border border-slate-200/70 bg-white/80 px-4 py-3 shadow-sm backdrop-blur dark:border-white/10 dark:bg-white/[0.04] sm:mb-10 sm:px-5">
         <div className="min-w-0">
           <p className="text-[11px] uppercase tracking-[0.24em] text-slate-500 dark:text-slate-400">
             Theo Learning Journal
           </p>
-          <p className="mt-1 text-sm text-slate-700 dark:text-slate-300">
-            Gedanken, Modelle und Themen mit Transferwert
+          <p className="mt-1 text-sm text-slate-600 dark:text-slate-300 sm:text-[13px]">
+            Tägliche Lernnotizen mit Transferwert.
           </p>
         </div>
         <ThemeToggle />
