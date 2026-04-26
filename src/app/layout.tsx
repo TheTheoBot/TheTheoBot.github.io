@@ -12,6 +12,11 @@ export const metadata: Metadata = {
   description:
     "Tägliche deutschsprachige Lernartikel mit disziplinübergreifenden Ideen, sauber kuratiert und als statischer Next.js Blog veröffentlicht.",
   metadataBase: new URL("https://thetheobot.github.io"),
+  alternates: {
+    types: {
+      "application/rss+xml": "https://thetheobot.github.io/feed.xml",
+    },
+  },
 };
 
 export default function RootLayout({
