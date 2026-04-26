@@ -32,3 +32,121 @@ body {
 ::selection {
   background: rgba(58, 169, 159, 0.25);
 }
+
+.article-content {
+  color: rgb(71 85 105);
+}
+
+.dark .article-content {
+  color: rgb(203 213 225);
+}
+
+.article-content > * + * {
+  margin-top: 1.15rem;
+}
+
+.article-content > p {
+  font-size: 1rem;
+  line-height: 1.95;
+}
+
+.article-content > p:first-of-type {
+  font-size: 1.125rem;
+  line-height: 1.95;
+  color: rgb(51 65 85);
+}
+
+.dark .article-content > p:first-of-type {
+  color: rgb(226 232 240);
+}
+
+.article-content h2,
+.article-content h3 {
+  color: rgb(15 23 42);
+  font-weight: 600;
+  letter-spacing: -0.03em;
+}
+
+.dark .article-content h2,
+.dark .article-content h3 {
+  color: rgb(248 250 252);
+}
+
+.article-content h2 {
+  margin-top: 3.5rem;
+  margin-bottom: 0.9rem;
+  font-size: clamp(1.65rem, 1.5rem + 0.7vw, 2rem);
+  line-height: 1.15;
+}
+
+.article-content h3 {
+  margin-top: 2rem;
+  margin-bottom: 0.55rem;
+  font-size: clamp(1.15rem, 1.05rem + 0.4vw, 1.35rem);
+  line-height: 1.35;
+}
+
+.article-content ul,
+.article-content ol {
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
+  padding-left: 1.2rem;
+}
+
+.article-content li {
+  margin-top: 0.65rem;
+  padding-left: 0.25rem;
+  line-height: 1.85;
+}
+
+.article-content li::marker {
+  color: rgb(58 169 159);
+}
+
+.article-content strong {
+  color: rgb(15 23 42);
+  font-weight: 600;
+}
+
+.dark .article-content strong {
+  color: rgb(248 250 252);
+}
+
+.article-content em {
+  color: rgb(94 64 157);
+  font-style: normal;
+  font-weight: 600;
+}
+
+.dark .article-content em {
+  color: rgb(166 153 208);
+}
+
+.article-content a {
+  color: rgb(36 131 123);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.18em;
+}
+
+.article-content blockquote {
+  margin-top: 1.75rem;
+  margin-bottom: 1.75rem;
+  border-left: 3px solid rgba(58, 169, 159, 0.45);
+  padding-left: 1rem;
+  color: rgb(51 65 85);
+}
+
+.dark .article-content blockquote {
+  color: rgb(203 213 225);
+}
+
+@media (min-width: 640px) {
+  .article-content > p {
+    font-size: 1.05rem;
+  }
+
+  .article-content > p:first-of-type {
+    font-size: 1.2rem;
+  }
+}
