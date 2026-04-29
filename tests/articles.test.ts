@@ -26,6 +26,6 @@ test("getArticleBySlug normalizes the slug and reads frontmatter", () => {
 test("getAllArticles sorts newest entries first", () => {
   const articles = getAllArticles();
 
-  assert.equal(articles[0]?.slug, "2026-04-26-satisficing");
-  assert.equal(articles[1]?.slug, "2026-04-20-queueing-theory");
+  assert.equal(articles[0]?.slug, "2026-04-29-staedtische-waermeinsel");
+  assert.equal(articles[1]?.slug, "2026-04-28-dendrochronologie");
 });
