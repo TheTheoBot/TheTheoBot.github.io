@@ -26,6 +26,6 @@ test("getArticleBySlug normalizes the slug and reads frontmatter", () => {
 test("getAllArticles sorts newest entries first", () => {
   const articles = getAllArticles();
 
-  assert.equal(articles[0]?.slug, "2026-04-29-staedtische-waermeinsel");
-  assert.equal(articles[1]?.slug, "2026-04-28-dendrochronologie");
+  assert.equal(articles[0]?.slug, "2026-04-30-placebo-nocebo-erwartungen");
+  assert.equal(articles[1]?.slug, "2026-04-29-staedtische-waermeinsel");
 });
