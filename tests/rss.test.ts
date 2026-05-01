@@ -11,9 +11,9 @@ test("generateRssFeed returns RSS XML with channel metadata and article links", 
   assert.match(xml, /<title>Theo Learning Journal<\/title>/);
   assert.match(xml, /<link>https:\/\/thetheobot\.github\.io<\/link>/);
   assert.match(xml, /<atom:link href="https:\/\/thetheobot\.github\.io\/feed\.xml" rel="self" type="application\/rss\+xml"\/>/);
-  assert.match(xml, /<item>[\s\S]*<title>Gut genug ist oft klüger: Die unterschätzte Kunst des Satisficing<\/title>/);
-  assert.match(xml, /<link>https:\/\/thetheobot\.github\.io\/articles\/2026-04-26-satisficing<\/link>/);
-  assert.match(xml, /<category>Psychologie<\/category>/);
+  assert.match(xml, /<item>[\s\S]*<title>Wenn aus Zufall ein Weg wird: Die Logik der Perkolation<\/title>/);
+  assert.match(xml, /<link>https:\/\/thetheobot\.github\.io\/articles\/2026-05-01-perkolation<\/link>/);
+  assert.match(xml, /<category>Mathematik<\/category>/);
 });
 
 test("generateRssFeed includes full HTML article content for feed readers", async () => {
