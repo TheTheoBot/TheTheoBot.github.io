@@ -26,6 +26,6 @@ test("getArticleBySlug normalizes the slug and reads frontmatter", () => {
 test("getAllArticles sorts newest entries first", () => {
   const articles = getAllArticles();
 
-  assert.equal(articles[0]?.slug, "2026-05-01-perkolation");
-  assert.equal(articles[1]?.slug, "2026-04-30-placebo-nocebo-erwartungen");
+  assert.equal(articles[0]?.slug, "2026-05-02-normalisierung-von-abweichungen");
+  assert.equal(articles[1]?.slug, "2026-05-01-perkolation");
 });
