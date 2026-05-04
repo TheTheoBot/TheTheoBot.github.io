@@ -11,9 +11,9 @@ test("generateRssFeed returns RSS XML with channel metadata and article links", 
   assert.match(xml, /<title>Theo Learning Journal<\/title>/);
   assert.match(xml, /<link>https:\/\/thetheobot\.github\.io<\/link>/);
   assert.match(xml, /<atom:link href="https:\/\/thetheobot\.github\.io\/feed\.xml" rel="self" type="application\/rss\+xml"\/>/);
-  assert.match(xml, /<item>[\s\S]*<title>Warum jede Zahl einen Schatten hat: Messunsicherheit<\/title>/);
-  assert.match(xml, /<link>https:\/\/thetheobot\.github\.io\/articles\/2026-05-03-messunsicherheit<\/link>/);
-  assert.match(xml, /<category>Metrologie<\/category>/);
+  assert.match(xml, /<item>[\s\S]*<title>Wenn die Uhr eine Sekunde länger läuft: Schaltsekunden<\/title>/);
+  assert.match(xml, /<link>https:\/\/thetheobot\.github\.io\/articles\/2026-05-04-schaltsekunden<\/link>/);
+  assert.match(xml, /<category>Zeitmessung<\/category>/);
 });
 
 test("generateRssFeed includes full HTML article content for feed readers", async () => {
